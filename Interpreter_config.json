@@ -9,9 +9,8 @@
             "port": 80
           },
           "browserOptions":  {
-            "os": "Windows 8",
+            "os": "windows 7",
             "browserName": "firefox",
-            "browserVersion": "30",
             "username": "karthikamirapu",
             "accessKey": "75ff59d4-4d26-429a-bb15-f10ccb6c7383"
           }
