@@ -9,8 +9,9 @@
             "port": 80
           },
           "browserOptions":  {
-            "browserName": "iexplore",
-            "browserVersion": "10",
+            "browserName": "${SAUCE_BROWSER}",
+            "os": "${SAUCE_PLATFORM}",
+            "browserVersion": "${SAUCE_BROWSER_VERSION}",
             "username": "karthikamirapu",
             "accessKey": "75ff59d4-4d26-429a-bb15-f10ccb6c7383"
             
