@@ -2,5 +2,10 @@ language: node_js
 before_script:
      - "npm install -g se-interpreter"
 script:
-     - "se-interpreter Interpreter_config.json"
-
+     - "se-interpreter test.json"
+env:
+  global:
+  matrix:
+  - SAUCE_PLATFORM='Windows 8.1' SAUCE_BROWSER='chrome' SAUCE_BROWSER_VERSION='36'
+  - SAUCE_PLATFORM='Windows XP' SAUCE_BROWSER='opera' SAUCE_BROWSER_VERSION='12'
+ 
