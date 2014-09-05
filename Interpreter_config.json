@@ -9,7 +9,7 @@
             "port": 80
           },
           "browserOptions":  {
-            "os": "${SAUCE_PLATFORM}",
+            "OS": "${SAUCE_PLATFORM}",
             "browserName": "${SAUCE_BROWSER}",
             "browserVersion": "${SAUCE_BROWSER_VERSION}",
             "username": "karthikamirapu",
