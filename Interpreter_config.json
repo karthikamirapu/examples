@@ -9,7 +9,7 @@
             "port": 80
           },
           "browserOptions":  {
-            "platform": "Mavericks",
+            "platform": "OS X 10.9",
             "browserName": "safari",
             "browserVersion": "7",
             "username": "karthikamirapu",
