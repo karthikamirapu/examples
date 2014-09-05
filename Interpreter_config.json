@@ -9,7 +9,7 @@
             "port": 80
           },
           "browserOptions":  {
-            "os": "Windows 8",
+            "platform": "Windows 8",
             "browserName": "iexplore",
             "browserVersion": "10",
             "username": "karthikamirapu",
