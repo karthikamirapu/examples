@@ -9,9 +9,9 @@
             "port": 80
           },
           "browserOptions":  {
-            "platform": "OS X 10.9",
-            "browserName": "safari",
-            "browserVersion": "7",
+            "platform": "${SAUCE_PLATFORM}",
+            "browserName": "${SAUCE_BROWSER}",
+            "browserVersion": "${SAUCE_BROWSER_VERSION}",
             "username": "karthikamirapu",
             "accessKey": "75ff59d4-4d26-429a-bb15-f10ccb6c7383"
             
