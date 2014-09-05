@@ -9,9 +9,9 @@
             "port": 80
           },
           "browserOptions":  {
-            "platform": "Windows 8",
-            "browserName": "iexplore",
-            "browserVersion": "10",
+            "platform": "Mavericks",
+            "browserName": "safari",
+            "browserVersion": "7",
             "username": "karthikamirapu",
             "accessKey": "75ff59d4-4d26-429a-bb15-f10ccb6c7383"
             
