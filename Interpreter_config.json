@@ -9,7 +9,7 @@
             "port": 80
           },
           "browserOptions":  {
-            "browserName": "Chrome",
+            "browserName": "iexplore",
             "username": "karthikamirapu",
             "accessKey": "75ff59d4-4d26-429a-bb15-f10ccb6c7383"
             
