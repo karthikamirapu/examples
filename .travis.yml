@@ -6,6 +6,6 @@ script:
 env:
   global:
   matrix:
-  - SAUCE_PLATFORM='Windows 8.1' SAUCE_BROWSER='chrome' SAUCE_BROWSER_VERSION='36'
+  - SAUCE_PLATFORM='Windows 8' SAUCE_BROWSER='chrome' SAUCE_BROWSER_VERSION='36'
 
  
