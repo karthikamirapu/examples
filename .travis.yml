@@ -7,4 +7,4 @@ env:
   global:
   matrix:
   - SAUCE_PLATFORM='Windows 8' SAUCE_BROWSER='chrome' SAUCE_BROWSER_VERSION='35'
-
+  - SAUCE_PLATFORM='Windows 8' SAUCE_BROWSER='chrome' SAUCE_BROWSER_VERSION='36'
