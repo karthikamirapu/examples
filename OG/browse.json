@@ -5,7 +5,34 @@
   "steps": [
     {
       "type": "get",
-      "url": "https://investor.homeunion.com"
+      "url": "https://investor.homeunion.com/#login"
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "page-login-username-input"
+      },
+      "text": "demo@panalinks.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "page-login-password-input"
+      },
+      "text": "123456"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "/html/body/div[2]/div[3]/div/div/div[1]/div/div/div[3]/div[2]/form[1]/div[7]/button"
+      }
     },
     {
       "type": "pause",
@@ -14,8 +41,123 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div[@class='intro-inner']/a"
+        "type": "link text",
+        "value": "Browse"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Browse"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Wish List"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Transactions"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Performance"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "myVault"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Welcome"
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Properties shown with financing"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "OPTION 1"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "OPTION 2"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "OPTION 3"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "SEE PROPERTY LIST"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "WATCH TUTORIAL"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit_link"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "How this page works?"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#watchvideo > div.modal-dialog > div.modal-content > div.modal-body"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#watchvideo > div.modal-dialog > div.modal-content > div.modal-footer > button.btn.default"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "NEED HELP?"
       }
     },
     {
@@ -24,17 +166,32 @@
     },
     {
       "type": "verifyTextPresent",
-      "text": "FINANCING"
+      "text": "1-866-732-3220"
     },
     {
       "type": "verifyTextPresent",
-      "text": "INVESTMENT"
+      "text": "cashflow@homeunion.com"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Leave a message"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Live chat now"
     },
     {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div[@class='optionbg']/ul/li[5]/a/img"
+        "value": "//div[@class='plan-header']/div/div[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='header-wrapper']/div[1]"
       }
     },
     {
@@ -42,24 +199,110 @@
       "waitTime": "3000"
     },
     {
-      "type": "setElementSelected",
+      "type": "verifyTextPresent",
+      "text": "5 Year Wealth Projection"
+    },
+    {
+      "type": "clickElement",
       "locator": {
-        "type": "name",
-        "value": "check1"
+        "type": "xpath",
+        "value": "//div[@id='needhelp']//button[normalize-space(.)='Close']"
       }
     },
     {
-      "type": "setElementNotSelected",
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
       "locator": {
-        "type": "css selector",
-        "value": "span.checked > input[name=\"check1\"]"
+        "type": "link text",
+        "value": "Click here to view details"
       }
     },
     {
-      "type": "setElementNotSelected",
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "STREET VIEW"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='map-canvas']/div/div[1]/div[2]"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
       "locator": {
         "type": "css selector",
-        "value": "span.checked > input[name=\"check1\"]"
+        "value": "svg"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "LOCAL AREA"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='map-places']/div/div[1]/div[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "container"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Major Employers"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Banks/ ATMs"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Malls"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "School"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Hospitals"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Restaurants"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Radius"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div[title=\"Click to set the map to Home\"] > div > b"
       }
     },
     {
@@ -69,91 +312,38 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "css selector",
-        "value": "div.bottom_chart_class > button.close"
+        "type": "id",
+        "value": "tab5"
       }
     },
     {
-      "type": "verifyTextPresent",
-      "text": "LOAN"
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "CITY INFO"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
     },
     {
       "type": "verifyTextPresent",
-      "text": "ALL CASH"
+      "text": "The performance information shown are projections. These are not actual results. These projections are based upon various assumptions and representative properties. No representation is being made that a performance record similar to the projected returns will or is likely to be achieved. Appreciation is indicative and based on publicly available Zillow Home Value Forecast [ZHVF] over the next 12 months. Please see the Terms of Use for important information about these projections."
     },
     {
-      "type": "verifyElementPresent",
+      "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div[@class='table-responsive']/table/thead/tr/th[3]/span[1]"
+        "value": "//div[@class='header-inner']/ul/li[2]/a/span[1]"
       }
     },
     {
-      "type": "pause",
-      "waitTime": "3000"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "OPTION 2"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "OPTION 3"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "SEE PROPERTY LIST"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "PROPERTY"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "PRICE"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "INVESTMENT"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "CASH FLOW"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "RETURN"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "APPRECIATION"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "ADD TO WISHLIST"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "Portfolio"
-    },
-    {
-      "type": "pause",
-      "waitTime": "3000"
-    },
-    {
-      "type": "verifyElementPresent",
+      "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div[@class='plan-result']/div/div[2]/div[2]/img"
+        "type": "id",
+        "value": "logout-link"
       }
-    },
-    {
-      "type": "pause",
-      "waitTime": "3000"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "REGISTER TO SEE MORE"
     }
   ],
   "data": {
