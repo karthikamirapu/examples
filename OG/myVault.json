@@ -1,0 +1,129 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://investor.homeunion.com"
+    },
+    {
+      "type": "pause",
+      "waitTime": "4000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='intro-inner']/a"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login-link"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "login-username-input"
+      },
+      "text": "demo@panalinks.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "login-password-input"
+      },
+      "text": "123456"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login-btn"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "4000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='page-sidebar-menu']//span[normalize-space(.)='myVault']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "4000"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "INVESTMENT"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "CURRENT HOME"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PERSONAL DOCUMENTS"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//*[@id='evRegularContent']/div[1]/div/div/div[2]/div/img"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "WATCH TUTORIAL"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "NEED HELP?"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='evRegularContent']/div[1]/div/div/div[2]/div/img"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "The performance information shown are projections. These are not actual results. These projections are based upon various assumptions and representative properties. No representation is being made that a performance record similar to the projected returns will or is likely to be achieved. Appreciation is indicative and based on publicly available Zillow Home Value Forecast [ZHVF] over the next 12 months. Please see the Terms of Use for important information about these projections."
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='header-inner']/ul/li[2]/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "logout-link"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
