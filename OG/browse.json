@@ -222,7 +222,7 @@
       "waitTime": "5000"
     },
     {
-      "type": "waitForElementPresent",
+      "type": "verifyElementPresent",
       "locator": {
         "type": "xpath",
         "value": "//div[@id='map-canvas']/div/div[1]/div[2]"
