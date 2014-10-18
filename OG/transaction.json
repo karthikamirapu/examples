@@ -46,16 +46,15 @@
       "text": "123456"
     },
     {
-        "type": "clickElement",
+      "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "/html/body/div[2]/div[3]/div/div/div[1]/div/div/div[3]/div[2]/form[1]/div[7]/button"
-
+        "type": "id",
+        "value": "login-btn"
       }
     },
     {
       "type": "pause",
-      "waitTime": "5000"
+      "waitTime": "4000"
     },
     {
       "type": "clickElement",
@@ -65,11 +64,7 @@
       }
     },
     {
-      "type": "pause",
-      "waitTime": "5000"
-    },
-    {
-      "type": "verifyTextPresent",
+      "type": "waitForTextPresent",
       "text": "Total Transaction Progress"
     },
     {
@@ -197,10 +192,6 @@
       "text": "WATCH TUTORIAL"
     },
     {
-      "type": "pause",
-      "waitTime": "4000"
-    },
-    {
       "type": "verifyTextPresent",
       "text": "NEED HELP?"
     },
@@ -208,7 +199,7 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div[@class='header-inner']/ul/li[2]/a"
+        "value": "//div[@class='header-inner']/ul/li[2]/a/span[2]"
       }
     },
     {
