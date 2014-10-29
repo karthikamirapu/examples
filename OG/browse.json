@@ -41,8 +41,8 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "link text",
-        "value": "Browse"
+        "type": "xpath",
+        "value": "//ul[@class='page-sidebar-menu']//span[normalize-space(.)='Browse']"
       }
     },
     {
