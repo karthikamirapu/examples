@@ -214,11 +214,7 @@
       }
     },
     {
-      "type": "pause",
-      "waitTime": "5000"
-    },
-    {
-      "type": "verifyElementPresent",
+      "type": "waitForElementPresent",
       "locator": {
         "type": "xpath",
         "value": "//div[@id='map-canvas']/div/div[1]/div[2]"
