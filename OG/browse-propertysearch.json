@@ -1,0 +1,205 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://investor.homeunion.com/#login"
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "page-login-username-input"
+      },
+      "text": "demo@panalinks.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "page-login-password-input"
+      },
+      "text": "123456"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "/html/body/div[2]/div[3]/div/div/div[1]/div/div/div[3]/div[2]/form[1]/div[7]/button"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Browse"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Property Search"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Property Search"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "div.radio > span.checked"
+      }
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "#lbl_ques20_tab > div.radio > span"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "MIN RETURN %"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "MIN APPRECIATION %"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PROPERTY CLASS"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PROPERTY PRICE RANGE"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "YEAR BUILT (YYYY)"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "LOCATIONS"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Multi-unit Only"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Properties shown with financing"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "All Return, Cashflow, and Appreciation data are projections. Please see our disclaimers below."
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PROPERTY"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "PRICE"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "INVESTMENT"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "RETURN"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "APPRECIATION"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "YEAR BUILT"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "ADD TO WISHLIST"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[2]/div[3]/div/div[2]/div/div[3]/div/div/div[3]/div[1]/table/tbody/tr[1]/td[8]/div/a/div/i[1]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "This property has been saved to your Properties Wish List. If you’re interested in investing in this property, let us know, we’d be happy to give you a call."
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "button.btn.blue "
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Wish List"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "span.fa.fa-times"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Are you sure you want to remove this property?"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='wishlistbuy']//button[normalize-space(.)='Yes']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='header-inner']/ul/li[2]/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "logout-link"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
