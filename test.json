@@ -11,7 +11,8 @@
           "browserOptions":  {
             "platform": "${SAUCE_PLATFORM}",
             "browserName": "${SAUCE_BROWSER}",
-            "browserVersion": "${SAUCE_BROWSER_VERSION}"
+            "browserVersion": "${SAUCE_BROWSER_VERSION}",
+            "screen-resolution":"1280x1024"
           }
         }
       ],
