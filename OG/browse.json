@@ -81,11 +81,11 @@
       }
     },
     {
-      "type": "waitForTextPresent",
+      "type": "verifyTextPresent",
       "text": "Welcome"
     },
     {
-      "type": "waitForTextPresent",
+      "type": "verifyTextPresent",
       "text": "Properties shown with financing"
     },
     {
