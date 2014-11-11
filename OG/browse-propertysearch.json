@@ -100,10 +100,6 @@
     },
     {
       "type": "verifyTextPresent",
-      "text": "Properties shown with financing"
-    },
-    {
-      "type": "verifyTextPresent",
       "text": "All Return, Cashflow, and Appreciation data are projections. Please see our disclaimers below."
     },
     {
@@ -138,7 +134,7 @@
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//div[2]/div[3]/div/div[2]/div/div[3]/div/div/div[3]/div[1]/table/tbody/tr[1]/td[8]/div/a/div/i[1]"
+        "value": "/html/body/div[2]/div[3]/div/div[2]/div/div[3]/div/div/div[3]/div[1]/table/tbody/tr[2]/td[8]/div/a"
       }
     },
     {
