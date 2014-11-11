@@ -92,10 +92,6 @@
       "text": "Welcome"
     },
     {
-      "type": "verifyTextPresent",
-      "text": "Properties shown with financing"
-    },
-    {
       "type": "verifyElementPresent",
       "locator": {
         "type": "link text",
