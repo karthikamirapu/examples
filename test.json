@@ -11,7 +11,7 @@
           "browserOptions":  {
             "platform": "${SAUCE_PLATFORM}",
             "browserName": "${SAUCE_BROWSER}",
-            "browserVersion": "${SAUCE_BROWSER_VERSION}"
+            "version": "${SAUCE_BROWSER_VERSION}"
             }
         }
       ],
