@@ -64,11 +64,7 @@
       }
     },
     {
-      "type": "pause",
-      "waitTime": "4000"
-    },
-    {
-      "type": "verifyTextPresent",
+      "type": "waitForTextPresent",
       "text": "INVESTMENT"
     },
     {

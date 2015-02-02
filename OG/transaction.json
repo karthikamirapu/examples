@@ -35,7 +35,7 @@
         "type": "id",
         "value": "login-username-input"
       },
-      "text": "investorportal@outlook.com"
+      "text": "demo@homeunion.com"
     },
     {
       "type": "setElementText",
@@ -43,7 +43,7 @@
         "type": "id",
         "value": "login-password-input"
       },
-      "text": "Homeunion2010"
+      "text": "123456"
     },
     {
       "type": "clickElement",
@@ -141,7 +141,7 @@
     },
     {
       "type": "verifyTextPresent",
-      "text": "Loan Docs Signed"
+      "text": "Docs Signed"
     },
     {
       "type": "verifyTextPresent",
