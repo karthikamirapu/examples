@@ -37,6 +37,13 @@
       }
     },
     {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.img-responsive"
+      }
+    },
+    {
       "type": "waitForTextPresent",
       "text": "First Name"
     },
