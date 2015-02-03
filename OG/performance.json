@@ -5,29 +5,21 @@
   "steps": [
     {
       "type": "get",
-      "url": "https://investor.homeunion.com"
-    },
-    {
-      "type": "pause",
-      "waitTime": "4000"
+      "url": "https://investor.homeunion.com/"
     },
     {
       "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div[@class='intro-inner']/a"
+        "type": "link text",
+        "value": "Get Started"
       }
     },
     {
       "type": "clickElement",
       "locator": {
-        "type": "id",
-        "value": "login-link"
+        "type": "link text",
+        "value": "Login"
       }
-    },
-    {
-      "type": "pause",
-      "waitTime": "2000"
     },
     {
       "type": "setElementText",
@@ -53,63 +45,29 @@
       }
     },
     {
-      "type": "pause",
-      "waitTime": "4000"
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Performance"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "INVESTMENT SUMMARY"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "INCOME AND EXPENSES"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "NET OPERATING INCOME"
     },
     {
       "type": "clickElement",
       "locator": {
         "type": "xpath",
-        "value": "//ul[@class='page-sidebar-menu']//span[normalize-space(.)='myVault']"
-      }
-    },
-    {
-      "type": "pause",
-      "waitTime": "4000"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "INVESTMENT"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "CURRENT HOME"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "PERSONAL DOCUMENTS"
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//*[@id='evRegularContent']/div[1]/div/div/div[2]/div/img"
-      }
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "WATCH TUTORIAL"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "NEED HELP?"
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[@id='evRegularContent']/div[1]/div/div/div[2]/div/img"
-      }
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "The performance information shown are projections. These are not actual results. These projections are based upon various assumptions and representative properties. No representation is being made that a performance record similar to the projected returns will or is likely to be achieved. Appreciation is indicative and based on publicly available Zillow Home Value Forecast [ZHVF] over the next 12 months. Please see the Terms of Use for important information about these projections."
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[@class='header-inner']/ul/li[2]/a/span[1]"
+        "value": "//div[@class='header-inner']/ul/li[2]/a"
       }
     },
     {
