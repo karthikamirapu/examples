@@ -37,15 +37,7 @@
       }
     },
     {
-      "type": "pause",
-      "waitTime": "2000"
-    },
-    {
-      "type": "verifyTextPresent",
-      "text": "Register to view additional investment opportunities, property details and more. We take your privacy seriously and will not sell or share your information with anyone"
-    },
-    {
-      "type": "verifyTextPresent",
+      "type": "waitForTextPresent",
       "text": "First Name"
     },
     {
