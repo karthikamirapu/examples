@@ -22,6 +22,10 @@
       }
     },
     {
+      "type": "pause",
+      "waitTime": ""
+    },
+    {
       "type": "setElementText",
       "locator": {
         "type": "id",
@@ -52,7 +56,7 @@
       }
     },
     {
-      "type": "verifyTextPresent",
+      "type": "waitForTextPresent",
       "text": "INVESTMENT SUMMARY"
     },
     {
