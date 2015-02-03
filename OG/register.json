@@ -36,6 +36,10 @@
         "value": "registersign_trig"
       }
     },
+     {
+      "type": "pause",
+      "waitTime": "2000"
+    },
     {
       "type": "clickElement",
       "locator": {
