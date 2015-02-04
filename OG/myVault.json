@@ -14,8 +14,8 @@
     {
       "type": "clickElement",
       "locator": {
-        "type": "xpath",
-        "value": "//div[@class='intro-inner']/a"
+        "type": "css selector",
+        "value": "button.close.cross-btn"
       }
     },
     {
