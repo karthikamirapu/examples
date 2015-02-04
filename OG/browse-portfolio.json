@@ -187,27 +187,6 @@
       "type": "clickElement",
       "locator": {
         "type": "link text",
-        "value": "STREET VIEW"
-      }
-    },
-    {
-      "type": "waitForElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[@id='map-canvas']/div/div[1]/div[2]"
-      }
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "css selector",
-        "value": "svg"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "link text",
         "value": "LOCAL AREA"
       }
     },
