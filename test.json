@@ -16,7 +16,7 @@
         }
       ],
       "scripts": [
-        "OG/*.json"
+        "Assetclass-OG/*.json"
       ]
     }
   ]
