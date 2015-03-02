@@ -79,11 +79,8 @@
       "waitTime": "3000"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[1]/div[1]/div/section"
-      }
+      "type": "verifyTextPresent",
+      "text": "Address is approximate"
     },
     {
       "type": "clickElement",
