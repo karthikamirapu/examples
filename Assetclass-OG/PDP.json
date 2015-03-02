@@ -125,13 +125,6 @@
       "text": "My Rent:"
     },
     {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[1]/div[3]/div/div/div[2]/div[1]/div[2]/svg"
-      }
-    },
-    {
       "type": "verifyTextPresent",
       "text": "Household Rent Affordability"
     },
@@ -145,13 +138,6 @@
     {
       "type": "pause",
       "waitTime": "3000"
-    },
-    {
-      "type": "verifyElementPresent",
-      "locator": {
-        "type": "xpath",
-        "value": "//div[@class='gm-style']/div[1]/div[2]"
-      }
     },
     {
       "type": "verifyTextPresent",
