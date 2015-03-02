@@ -16,7 +16,7 @@
         }
       ],
       "scripts": [
-        "Assetclass-OG/*.json"
+        "Assetclass-OG/PDP.json"
       ]
     }
   ]
