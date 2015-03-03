@@ -12,7 +12,6 @@
             "platform": "${SAUCE_PLATFORM}",
             "browserName": "${SAUCE_BROWSER}",
             "version": "${SAUCE_BROWSER_VERSION}",
-            "screenResolution": "1280x1024"
             }
         }
       ],
